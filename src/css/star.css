@@ -125,12 +125,12 @@ p {
     position: absolute;
     left: 7%;
     top: 10%;
-    opacity: 0;
 
-    -webkit-animation: fadeinimg 10s; /* Safari, Chrome and Opera > 12.1 */
-    animation: fadeinimg 10s;
-    -webkit-animation-delay:60s;
-    animation-delay:60s;
+    opacity: 0;
+    -moz-animation: fadeinimg 3s ease-in 60s forwards; /* Firefox */
+    -webkit-animation: fadeinimg 3s ease-in 60s forwards; /* Safari and Chrome */
+    -o-animation: fadeinimg 3s ease-in 60s forwards; /* Opera */
+    animation: fadeinimg 3s ease-in 60s forwards;
 }
 
 @keyframes fadeinimg {
