@@ -128,7 +128,9 @@ p {
     opacity: 0;
 
     -webkit-animation: fadeinimg 10s; /* Safari, Chrome and Opera > 12.1 */
+    animation: fadeinimg 10s;
     -webkit-animation-delay:60s;
+    animation-delay:60s;
 }
 
 @keyframes fadeinimg {
