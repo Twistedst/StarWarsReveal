@@ -12,8 +12,8 @@ function generateStars() {
     star.style.left = xy[1] + 'px';
     document.body.append(star);
     setInterval(function () {
-      flashtext('star' + i, 'yellow');
-    }, (1000 % i) * 2);
+      flashtext('star' + i, 'black');
+    }, (5000 % i));
   }
 }
 
@@ -54,3 +54,17 @@ window.onresize = function () {
   removeStars();
   generateStars();
 };
+
+document.body.classList.add('js-loading');
+
+window.addEventListener("load", showPage);
+
+function showPage() {
+  document.body.classList.remove('js-loading');
+}
+
+document.body.onkeyup = function(e){
+  if(e.keyCode == 32){
+
+  }
+}
